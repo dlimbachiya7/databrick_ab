@@ -18,7 +18,7 @@ resources:
       tasks:
         - task_key: notebook_orc
           notebook_task:
-            notebook_path: /../src/jobs/franchise_insights.ipynb
+            notebook_path: ../src/jobs/franchise_insights.ipynb
           environment_key: default
 
       environments:
