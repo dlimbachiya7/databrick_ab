@@ -1,4 +1,4 @@
-# Job for databricks_ab.
+# Job for databricks_ab. and added second task for product insights.
 resources:
   jobs:
     dev_job:
@@ -19,6 +19,11 @@ resources:
         - task_key: notebook_orc
           notebook_task:
             notebook_path: ../src/jobs/franchise_insights.ipynb
+          environment_key: default
+      tasks:
+        - task_key: prod_insights_orc
+          notebook_task:
+            notebook_path: ../src/jobs/product_insights.ipynb
           environment_key: default
 
       environments:
