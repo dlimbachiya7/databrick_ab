@@ -24,3 +24,13 @@ targets:
     variables:
       catalog: dev
       schema: bakehouse
+
+  prod:
+    default: false
+    presets:
+      name_prefix: prod_
+    workspace:
+      host: https://adb-7405618963211535.15.azuredatabricks.net
+    variables:
+      catalog: prod
+      schema: bakehouse_prod
